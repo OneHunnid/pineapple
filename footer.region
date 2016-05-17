@@ -1,0 +1,8 @@
+  <footer id="footer" class="footer">
+    <squarespace:block-field id="footerBlocks" columns="12" />
+  </footer>
+
+  <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+  {squarespace-footers}
+  </body>
+</html>

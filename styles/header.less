@@ -1,0 +1,65 @@
+.header {
+
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 12px 64px;
+  }
+}
+
+.site-title {
+  font-size: 52px;
+  font-weight: 100;
+  margin-right: auto;
+
+  a {
+    color: @color-black;
+  }
+}
+
+.main-navigation-list {
+  margin: 0px;
+  padding-left: 0px;
+
+  &:hover a {
+    color: @color-black;
+  }
+}
+
+.main-navigation-item {
+  display: inline-block;
+
+  a {
+    color: @color-gray;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &:hover {
+      color: @color-black;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 1.5em;
+  }
+
+  &.active-link > a {
+    color: @color-black;
+  }
+
+  &.active-folder > a {
+    color: @color-black;
+  }
+
+  /* Folder Dropdowns */
+
+  .main-navigation-dropdown {
+    display: none;
+  }
+
+  &:hover > .main-navigation-dropdown {
+    display: inline-block;
+  }
+}
